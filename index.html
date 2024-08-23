@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adegsusto</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #image {
+            display: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="image" src="sua-imagem.jpg" alt="Imagem Repentina">
+    <audio id="scream-sound" src="seu-grito.mp3"></audio>
+
+    <button onclick="playSound()">Clique aqui</button>
+
+    <script>
+        function playSound() {
+            document.getElementById('image').style.display = 'block';
+            document.getElementById('scream-sound').play();
+        }
+    </script>
+    
+
+</body>
+</html>
